@@ -1,11 +1,11 @@
 import React from "react";
 
-const DocsPage = () => {
+const ToolsPage = () => {
     return (
         <>
-            <h1>Hell falafel docs</h1>
+            <h1>Hell falafel tools</h1>
         </>
     )
 }
 
-export default DocsPage
+export default ToolsPage

@@ -9,7 +9,11 @@ const Sidebar = ({ items }) => {
           <div className="sidebar">
             {items.map((item, index) => (
               <div key={index} id="item">
-                <SidebarItem key={index} path={item.path} title={item.title} />
+                <SidebarItem
+                  key={index}
+                  path={item.path}
+                  title={item.title}
+                />
               </div>
             ))}
           </div>
@@ -20,7 +24,11 @@ const Sidebar = ({ items }) => {
 };
 
 const SidebarItem = ({ title, path }) => {
-  return <Link className={"sidebar-item"} to={path}>{title}</Link>;
+  return (
+    <Link className={"sidebar-item"} to={path}>
+      {title}
+    </Link>
+  );
 };
 
 export default Sidebar;

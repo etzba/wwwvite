@@ -1,22 +1,25 @@
-const DocsHome = () => {
+export const DocsHome = () => {
   return (
     <div>
       <h1>Hell falafel docs</h1>
-    </div>
-  );
-}
-
-const GettingStarted = () => {
-  return (
-    <div>
-      <p>getting started text</p>
+      <p>welcome falafel docs</p>
     </div>
   );
 };
 
-const Install = () => {
+const GettingStarted = () => {
   return (
       <div>
+        <h1>Getting Started</h1>
+        <p>getting started text</p>
+      </div>
+  );
+};
+
+export const Install = () => {
+  return (
+      <div>
+        <h1>Install</h1>
         <p>install text</p>
       </div>
   );
@@ -24,18 +27,21 @@ const Install = () => {
 
 export const DocsData = [
   {
-    title: "Docs Welcome",
+    id: "welcome",
+    title: "Welcome",
     path: "welcome",
-    content: <DocsHome />,
+    element: <DocsHome />,
   },
   {
+    id: "start",
     title: "Getting Started",
     path: "start",
-    content: <GettingStarted />,
+    element: <GettingStarted />,
   },
   {
+    id: "install",
     title: "Install",
     path: "install",
-    content: <Install />,
+    element: <Install />,
   },
 ];

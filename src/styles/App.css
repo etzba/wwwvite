@@ -17,9 +17,13 @@
   --transition: 240ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.container {
+  display: "flex";
+  height: "100vh";
+}
+
 .sidebar {
   background-color: #e3e6e2;
-  width: 25%;
   padding: 20px 40px 30px 20px;
   height: 100vh;
   position: sticky;
@@ -99,7 +103,4 @@
   padding: 20px 10px 20px 100px;
   justify-content: left;
   color: rgb(235, 240, 235);
-}
-
-.content {
 }
