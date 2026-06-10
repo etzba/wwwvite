@@ -1,33 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/header.css";
 
-const Header = () => {
+const Header = ({ items }) => {
   return (
     <>
-    <div className="header">
-      <div className="logo">
-        <h3>Mom</h3>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <Link to={"about"} className={"header-link"}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to={"docs"} className={"header-link"}>
-              Docs
-            </Link>
-          </li>
-          <li>
-            <Link to={"tools"} className={"header-link"}>
-              Tools
-            </Link>
-          </li>
+      <header className="header">
+          <img src={require("src/assets/etzba.png")} alt="Logo" className="logo" />
+        <ul className="header-links">
+          {items.map((item, index) => (
+            <li key={index}>
+              <Link key={item.id} to={item.path} className={"header-link"}>
+                {item.title}
+              </Link>
+            </li>
+          ))}
         </ul>
-      </nav>
-    </div>
+      </header>
     </>
   );
 };
