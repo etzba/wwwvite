@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import CodeBlock from "../../components/CodeBlock";
 import linuxBinaryFile from "../../assets/etz_linux_amd64_v1?url";
+import darwinBinaryFile from "../../assets/etz_darwin_amd64_v1?url";
 import "../../styles/layout.css";
 
 const Install = () => {
@@ -53,7 +54,7 @@ const InstallLinux = () => {
           </ul>
           <h3>Steps</h3>
           <p>
-            Download linux distribution from <a className={"page-link"} href={linuxBinaryFile} download="etz_linux_amd64_v1">here</a> or use{" "}
+            Download linux distribution from <a className={"page-link"} href={linuxBinaryFile} download="etz">here</a> or use{" "}
             <code>wget</code> to download from github:
           </p>
           <CodeBlock
@@ -94,7 +95,7 @@ const InstallMacOS = () => {
         <div>
           <h3>Steps</h3>
           <p>
-            Download linux distribution from <a className={"page-link"}>here</a>{" "}
+            Download mac distribution from <a className={"page-link"} href={darwinBinaryFile} download="etz">here</a> or use{" "}
             or use <code>wget</code> to download from github:
           </p>
           <CodeBlock
