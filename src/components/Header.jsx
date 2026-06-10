@@ -6,9 +6,7 @@ const Header = ({ items }) => {
   return (
     <>
       <header className="header">
-        <div className="logo">
-          <img src={require("../assets/etzba.png")} alt="Logo" className="logo" />
-        </div>
+          <img src={require("src/assets/etzba.png")} alt="Logo" className="logo" />
         <ul className="header-links">
           {items.map((item, index) => (
             <li key={index}>
