@@ -2,7 +2,7 @@
   "name": "vite-app",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://etzba.github.io/wwwvite/",
+  "homepage": "https://etzba.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
