@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-//import etzLinux from "../../files/etzba_linux_amd64_v1/etz";
-//import etzMacOS from "../../files/etzba_darwin_amd64_v1/etz";
 import CodeBlock from "../../components/CodeBlock";
+import linuxBinaryFile from "../../assets/etz_linux_amd64_v1?url";
 import "../../styles/layout.css";
 
 const Install = () => {
@@ -54,8 +53,8 @@ const InstallLinux = () => {
           </ul>
           <h3>Steps</h3>
           <p>
-            Download linux distribution from <a className={"page-link"}>here</a>{" "}
-            or use <code>wget</code> to download from github:
+            Download linux distribution from <a className={"page-link"} href={linuxBinaryFile} download="etz_linux_amd64_v1">here</a> or use{" "}
+            <code>wget</code> to download from github:
           </p>
           <CodeBlock
             code={
@@ -63,7 +62,7 @@ const InstallLinux = () => {
             }
           />
           <p>Move to bin directory:</p>
-          <CodeBlock code={"mv etz /usr/local/bin"} />
+          <CodeBlock code={"mv etz_linux_amd64_v1 /usr/local/bin/etz"} />
           <p>Check from terminal that you can see the version:</p>
           <CodeBlock code={"etz version"} />
         </div>
