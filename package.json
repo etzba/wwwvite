@@ -2,6 +2,7 @@
   "name": "vite-app",
   "private": true,
   "version": "0.1.0",
+  "homepage": "https://etzba.github.io/wwwvite/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,7 +14,6 @@
   },
   "dependencies": {
     "react": "^19.2.6",
-    "react-copy-to-clipboard": "^5.1.1",
     "react-dom": "^19.2.6",
     "react-router-dom": "^7.16.0",
     "vite-plugin-commonjs": "^0.10.4"
