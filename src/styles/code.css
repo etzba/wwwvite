@@ -9,7 +9,8 @@
   background-color: #4a4646; /* Dark background for contrast */
   color: #f8f8f2; /* Light text for readability */
   padding: 15px 10px 15px 10px;
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px;
+  border:#f1fa8c;
   font-family: "Monospace", monospace; /* Monospace font */
   font-size: 16px; /* Slightly larger font size for readability */
   overflow-x: auto; /* Enable horizontal scrolling for long lines */
@@ -27,4 +28,9 @@
 /* Optional: Highlight strings */
 .code-snippet .string {
   color: #f1fa8c; /* Highlight color for strings */
+}
+
+/* Optional: Highlight strings */
+.code-copy {
+  float: right;
 }
