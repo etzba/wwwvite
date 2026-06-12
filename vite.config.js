@@ -4,7 +4,7 @@ import commonjs from "vite-plugin-commonjs";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/",
+  base: "https://etzba.github.io/wwwvite/",
   plugins: [
     react(),
     commonjs(),
