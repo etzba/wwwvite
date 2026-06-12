@@ -8,7 +8,6 @@ import { DocsItems } from "./routes/docsItems";
 import { HeaderItems } from "./routes/headerItems";
 
 const App = () => {
-  console.log("start app")
   return (
     <>
       <div className="layout">

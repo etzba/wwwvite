@@ -3,7 +3,6 @@ import CodeBlock from "../../components/CodeBlock";
 import "../../styles/layout.css";
 
 const GettingStarted = () => {
-  console.log("path")
   return (
     <div className="container">
       <section className="section">
