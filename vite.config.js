@@ -11,7 +11,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      src: "/wwwvite/src",
+      src: "/src",
     },
   },
   build: {
