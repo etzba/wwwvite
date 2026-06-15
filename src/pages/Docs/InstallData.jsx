@@ -28,7 +28,7 @@ const Install = () => {
       </section>
     </div>
   );
-}
+};
 // Download linux distribution from <a className={"page-link"} href={etzLinux}>here</a> or use{" "}
 const InstallLinux = () => {
   return (
@@ -54,18 +54,25 @@ const InstallLinux = () => {
           </ul>
           <h3>Steps</h3>
           <p>
-            Download linux distribution from <a className={"page-link"} href={linuxBinaryFile} download="etz">here</a> or use{" "}
-            <code>wget</code> to download from github:
+            Download linux distribution from{" "}
+            <a className={"page-link"} href={linuxBinaryFile} download="etz">
+              here
+            </a>{" "}
+            or use <code>wget</code> to download from github:
           </p>
           <CodeBlock
+            type="term"
             code={
               "wget https://raw.githubusercontent.com/etzba/etz/master/etzba_linux_amd64_v1/etz"
             }
           />
           <p>Move to bin directory:</p>
-          <CodeBlock code={"mv etz_linux_amd64_v1 /usr/local/bin/etz"} />
+          <CodeBlock
+            type="term"
+            code={"mv etz_linux_amd64_v1 /usr/local/bin/etz"}
+          />
           <p>Check from terminal that you can see the version:</p>
-          <CodeBlock code={"etz version"} />
+          <CodeBlock type="term" code={"etz version"} />
         </div>
       </section>
     </div>
@@ -95,18 +102,22 @@ const InstallMacOS = () => {
         <div>
           <h3>Steps</h3>
           <p>
-            Download mac distribution from <a className={"page-link"} href={darwinBinaryFile} download="etz">here</a> or use{" "}
-            or use <code>wget</code> to download from github:
+            Download mac distribution from{" "}
+            <a className={"page-link"} href={darwinBinaryFile} download="etz">
+              here
+            </a>{" "}
+            or use or use <code>wget</code> to download from github:
           </p>
           <CodeBlock
+            type="term"
             code={
               "wget https://raw.githubusercontent.com/etzba/etz/master/etzba_darwin_amd64_v1/etz"
             }
           />
           <p>Move to bin directory:</p>
-          <CodeBlock code={"mv etz /usr/local/bin"} />
+          <CodeBlock type="term" code={"mv etz /usr/local/bin"} />
           <p>Check from terminal that you can see the version:</p>
-          <CodeBlock code={"etz version"} />
+          <CodeBlock type="term" code={"etz version"} />
         </div>
       </section>
     </div>

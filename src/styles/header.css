@@ -56,8 +56,9 @@
   justify-content: right;
   width: 80%;
   display: flex;
-  padding-top: 24px;
-  font-size: 15px;
+  padding-top: 20px;
+  padding-right: 220px;
+  font-size: 12px;
 }
 
 .header li {
@@ -70,11 +71,13 @@
 .logo {
   align-items: center;
   padding-left: 100px;
-  width: 15%;
+  width: 20em;
+  height: 5em;
 }
 
 .logo h3 {
-  padding: 20px 10px 20px 100px;
+  padding: 20px 30px 20px 100px;
   justify-content: left;
   color: rgb(235, 240, 235);
+  height: 6em;
 }

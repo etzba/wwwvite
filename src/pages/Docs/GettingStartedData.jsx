@@ -14,9 +14,9 @@ const GettingStarted = () => {
         <p>
           Let's start by checking <code>etz</code> version and run:
         </p>
-        <CodeBlock code={"etz version"} />
+        <CodeBlock type="term" code={"etz version"} />
         <p>And before we are getting to the juicy part, let's ask for help:</p>
-        <CodeBlock code={"etz --help"} />
+        <CodeBlock type="term" code={"etz --help"} />
         <p>
           It's ok if <code>--help</code> was not that helpful at the moment.
           Soon you'll understand better what to do with the commands from the
@@ -52,12 +52,16 @@ const RunEtz = () => {
           <code>api</code> will use http protocol under the scene to run a load
           test on a remote server url:
         </p>
-        <CodeBlock code={"etz api --url=https://etzba.com --method=GET"} />
+        <CodeBlock
+          type="term"
+          code={"etz api --url=https://etzba.com --method=GET"}
+        />
         <p>
           Here is how to add payload to your request, run in duration of 3
           seconds, with 100 request per second using 50 workers (routines):
         </p>
         <CodeBlock
+          type="term"
           code={`etz api --url=https://etzba.com \\ 
               --method=POST -d 3s -r 100 -w 50 \\
               -j '{"name":"Etz Ba","address":"Etzba etz 32"}'`}
@@ -67,6 +71,7 @@ const RunEtz = () => {
           how long did it take:
         </p>
         <CodeBlock
+          type="term"
           code={
             "etz file --url=https://etzba.com --method=POST --path=relative/path/to/files/"
           }
@@ -79,6 +84,7 @@ const RunEtz = () => {
           save locally on your machine:
         </p>
         <CodeBlock
+          type="term"
           code={
             "etz api --url=https://etzba.com --method=GET --output=files/result.json"
           }
@@ -110,6 +116,7 @@ const SimpleExec = () => {
           prefer...) and create an execution file:
         </p>
         <CodeBlock
+          type="yaml"
           code={`api:
 - url: https://etzba.com
   method: POST
@@ -122,7 +129,10 @@ const SimpleExec = () => {
           will help set the http request to whatever required. After you saved
           the file, simply use again your terminal and run:
         </p>
-        <CodeBlock code={`etz api --exec=path/to/executions.yaml`} />
+        <CodeBlock
+          type="term"
+          code={`etz api --exec=path/to/executions.yaml`}
+        />
         <p>
           When you feel like a pro, use our{" "}
           <Link className={"page-link"} to="/config/executions">
