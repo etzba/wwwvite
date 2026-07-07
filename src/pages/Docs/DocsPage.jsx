@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router";
-import Sidebar from "../../components/Siderbar";
+import Sidebar from "../../components/Sidebar";
 import "../../styles/pages.css";
 
 const DocsPage = ({ items }) => {
