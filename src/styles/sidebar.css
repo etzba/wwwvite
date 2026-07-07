@@ -1,6 +1,6 @@
 .sidebar {
   background-color: var(--surface1);
-  width: 30%;
+  width: 100%;
   padding: 60px 10px 10px 20px;
   height: 100%;
   position: sticky;
@@ -40,7 +40,7 @@
   width: 100%;
   padding: 8px 10px;
   border: none;
-  font-size: 1.2rem;
+  font-size: var(--charsize3);
   text-align: left;
   white-space: nowrap;
   text-decoration: none;
@@ -51,4 +51,12 @@
 .arrow {
   position: relative;
   float: right;
+}
+
+@media (max-width: 768px) {
+  .sidebar { width: 0%; }
+}
+
+@media (min-width: 1024px) {
+  .sidebar { width: 33.33%; }
 }
