@@ -53,10 +53,6 @@
   float: right;
 }
 
-@media (max-width: 768px) {
-  .sidebar { width: 0%; }
-}
-
 @media (min-width: 1024px) {
   .sidebar { width: 33.33%; }
 }

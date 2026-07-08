@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/header.css";
 
-const Header = ({ items }) => {
+const Header = ({ items, isMobile }) => {
   return (
     <>
       <header className="header">
