@@ -9,12 +9,14 @@ const Sidebar = ({
   onNavigate,
   collapsed,
   onToggleCollapse,
+  isMobile,
 }) => {
   const [openMenus, setOpenMenus] = useState({});
   const toggleMenu = (id) =>
     setOpenMenus((prev) => ({ ...prev, [id]: !prev[id] }));
-
-  return (
+  return isMobile ? (
+    <></>
+  ) : (
     <>
       <nav className="sidebar">
         <ul>
@@ -29,9 +31,9 @@ const Sidebar = ({
                 >
                   <span>{item.title}</span>
                   {openMenus[item.id] && !collapsed ? (
-                    <RightArrow />
-                  ) : (
                     <DownArrow />
+                  ) : (
+                    <RightArrow />
                   )}
                 </Link>
                 {openMenus[item.id] && !collapsed && (

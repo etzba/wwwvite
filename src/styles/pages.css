@@ -4,7 +4,7 @@
   width: 100%;
   display: inline;
   font-family: var(--font);
-  font-size: 20px;
+  font-size: var(--charsize3);
 }
 
 .page h1 {
